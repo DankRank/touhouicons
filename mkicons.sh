@@ -25,8 +25,8 @@ output_desktop() {
 	echo "Categories=Game;"
 }
 download_icon() {
-	sum="$(echo -n "$1" | md5sum)"
-	curl -o $1 "https://www.thpatch.net/w/images/$(echo "$sum" | cut -c1)/$(echo "$sum" | cut -c1-2)/$1"
+	sum="$(printf %s "$1" | md5sum)"
+	curl -o "$1" "https://www.thpatch.net/w/images/$(echo "$sum" | cut -c1)/$(echo "$sum" | cut -c1-2)/$1"
 }
 for i in $games; do
 	output_desktop "$i" > "$i.desktop"

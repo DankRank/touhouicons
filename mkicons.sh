@@ -2,7 +2,7 @@
 game_path="${game_path:-/srv/egor}"
 exec_line="${exec_line:-env LC_ALL=ja_JP WINEPREFIX=/srv/egor/wine32 wine}"
 
-games_supported="alcostg th06 th07 th08 th09 th095 th10 th11 th12 th125 th128 th13 th14 th143 th15 th16 th165 th17 th18"
+games_supported="alcostg th06 th07 th08 th09 th095 th10 th11 th12 th125 th128 th13 th14 th143 th15 th16 th165 th17 th18 th185"
 games=""
 datadir="${XDG_DATA_HOME:-$HOME/.local/share}"
 
